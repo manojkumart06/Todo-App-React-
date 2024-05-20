@@ -2,12 +2,12 @@
   margin: 20px auto;
   padding: 20px;
   width: 400px;
-  font-family: Times new roman;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 
-input{
-  padding: 10px;
+input {
+  padding: 8px;
 }
 
 ul {
@@ -16,18 +16,42 @@ ul {
 }
 
 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
+  width: 100%;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.addButton, .filterButton, .deleteButton, .editButton {
+  padding: 8px;
+  cursor: pointer;
+  margin: 2px;
 }
 
 .addButton {
-  padding: 10px;
-  cursor: pointer;
-  margin: 2px;
   background-color: green;
   color: white;
 }
+
 .deleteButton {
-  margin: 10px;
-  background-color: Red;
+  background-color: red;
+  color: white;
+}
+
+.filterButton {
+  padding: 5px;
+  background-color: lightgray;
+  color: black;
+}
+
+.filterButton.active {
+  background-color: rgb(89, 211, 87);
   color: white;
 }
